@@ -12,14 +12,14 @@ def main():
     print("3. Sair")
 
     while True:
-        choice = input("\nDigite sua escolha: 1, 2 ou 3")
+        choice = input("\nDigite sua escolha: 1, 2 ou 3: ")
 
         if choice == '3':
             print("Saindo do conversor")
             break
         if choice in ['1', '2']:
             try: 
-                temp = float(input("Digite a temperatura desejada"))
+                temp = float(input("Digite a temperatura desejada: "))
 
                 if choice == '1':
                     converted_temp = celsius_to_fahr(temp)
@@ -36,7 +36,7 @@ def main():
         print("Opção inválida! Por favor, selecione uma das três opções: 1, 2 ou 3")
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
 
 
